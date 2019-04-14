@@ -17,8 +17,27 @@ var email = '';
 
 // authentication
 
+function createAccount() {
+    window.location.href = "../createAccount/register.html";
+}
+
 function login() {
-    window.location.href = "../register/register.html";
+  const txtEmail = document.getElementById('txtEmail');
+  const txtPassword = document.getElementById('txtPassword');
+
+  const email = txtEmail.value;
+  const pass = txtPassword.value;
+
+  const promise = auth.signInWithEmailAndPassword(email, pass);
+
+  promise.catch(e => console.log(e.message));
+
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+	if(firebaseUser) {
+	  console.log(firebaseUser);
+	  window.location.href = "../home/home.html";
+	}
+  });
 }
 
 function register() {
