@@ -1,0 +1,25 @@
+[debug] [2019-04-14T12:20:03.289Z] ----------------------------------------------------------------------
+[debug] [2019-04-14T12:20:03.290Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-04-14T12:20:03.290Z] CLI Version:   6.5.0
+[debug] [2019-04-14T12:20:03.290Z] Platform:      darwin
+[debug] [2019-04-14T12:20:03.290Z] Node Version:  v8.12.0
+[debug] [2019-04-14T12:20:03.291Z] Time:          Sun Apr 14 2019 05:20:03 GMT-0700 (PDT)
+[debug] [2019-04-14T12:20:03.291Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-14T12:20:03.297Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-14T12:20:03.297Z] > authorizing via signed-in user
+[debug] [2019-04-14T12:20:03.298Z] [iam] checking project loquela-34ea1 for permissions ["firebase.projects.get"]
+[debug] [2019-04-14T12:20:03.299Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/loquela-34ea1:testIamPermissions  
+
+[debug] [2019-04-14T12:20:03.581Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-14T12:20:03.582Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/loquela-34ea1  
+ 
+[debug] [2019-04-14T12:20:04.030Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/dramalingam/Desktop/ThePriceIsRight'...
+[info] 
+[debug] [2019-04-14T12:20:04.032Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/10511979287/clients/_:getWebAppConfig  
+ 
+[debug] [2019-04-14T12:20:04.498Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
